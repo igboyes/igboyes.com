@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Permanent+Marker&display=swap');
+
+body {
+    background-color: #EC7A00;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+a {
+    color: #05887C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #047166;
+}
+
+img {
+    border-radius: 2px;
+    
+    height: 65px;
+}
+
+ul {
+    margin: 0 0 10px;
+    padding-left: 25px;        
+}
+
+.see-more {
+    color: #596AAE;
+    font-weight: bold;
+    opacity: 0.8;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.see-more:hover {
+    color: #2B3679;
+    opacity: 1;
+}
+
+.card-container {
+    align-items: center;
+    justify-content: center;    
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 500px;
+    z-index: 1000;
+}
+
+.card-header {
+    align-items: center;
+    border-bottom: 2px solid #596AAE;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.name {
+    font-family: "Permanent Marker";
+    font-size: 32px;
+    margin: 0;
+}
+
+.positions {
+    color: #494d52;
+    font-weight: bold;
+    margin: 0;
+}
+
+.profiles {
+    align-items: center;
+    display: flex;
+}
+
+.profiles a {
+    align-items: center;
+    display: flex;
+}
+
+.profiles a:not(:first-child) {
+    margin-left: 10px;
+}
+
+.profiles span {
+    margin-left: 3px;
+}
+
+.profiles svg {
+    height: 16px;
+    width: 16px;
+}
