@@ -158,6 +158,6 @@ ul {
     font-size: 14px;
 }
 
-.education {
-
+.education td:first-child {
+    font-weight: bold;
 }
