@@ -8,7 +8,7 @@ body {
 
 h2 {
     font-size: 19px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 a {
@@ -18,6 +18,19 @@ a {
 
 a:hover {
     color: #047166;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 2px solid #ccd7ff;
+    padding: 8px;
+}
+
+tr:first-child td {
+    border-top: 2px solid #ccd7ff;
 }
 
 img {
@@ -114,4 +127,12 @@ ul {
 .profiles svg {
     height: 16px;
     width: 16px;
+}
+
+.technologies td:not(:first-child) {
+    font-size: 14px;
+}
+
+.education {
+
 }
