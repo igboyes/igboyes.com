@@ -1,0 +1,35 @@
+---
+import { getCollection, getEntryBySlug } from "astro:content";
+import { format } from "date-fns";
+import Nav from "../../components/Nav.astro";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+
+  return posts.map((post) => {
+    return {
+      params: {
+        slug: post.slug,
+      },
+    };
+  });
+}
+
+const { slug } = Astro.params;
+
+const entry = await getEntryBySlug("blog", slug);
+
+const { Content } = await entry.render();
+---
+
+<Layout title="Blog">
+  <Nav />
+  <header class="mb-8 prose px-4">
+    <h1 class="mb-2">{entry.data.title}</h1>
+    <p class="my-2">{format(entry.data.date, "yyyy-MM-dd")}</p>
+  </header>
+  <section class="prose px-4">
+    <Content />
+  </section>
+</Layout>

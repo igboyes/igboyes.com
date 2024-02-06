@@ -1,0 +1,122 @@
+---
+import CvSection from "../components/CvSection.astro";
+import Duration from "../components/Duration.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="CV | Ian Boyes">
+  <Header />
+  <CvSection title="Skills">
+    <ul>
+      <li>
+        <div>
+          <h3>Python <Duration>11 years</Duration></h3>
+          <p></p>
+          <p>Deep into asyncio</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>JavaScript <Duration>10 years</Duration></h3><p>
+            <p>I've been riding the JS wave for a while.</p>
+            <p>jQuery 🠒 Backbone 🠒 React</p>
+            <p>Jasmine 🠒 Jest 🠒 Vitest</p>
+            <p>Enzyme 🠒 React Testing Library</p>
+            <p>Webpack 🠒 Vite</p>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Styling <Duration>10 years</Duration></h3>
+          <p>Finally understood CSS a few weeks ago.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Kubernetes <Duration>3 years</Duration></h3>
+          <p>Azure flavoured.</p>
+          <p>
+            Cluster autoscaling, pod autoscaling with <a href="https://keda.sh/"
+              >KEDA</a
+            >.
+          </p>
+          <p>Local development with <a href="https://tilt.dev/">Tilt</a>.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>MongoDB <Duration>9 years</Duration></h3>
+          <p>Why did I do this?</p>
+          <p>
+            MongoDB helped me learn why atomicity and consistency are important.
+            I am now a firm believer in Postgres.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Postgres <Duration>2 years</Duration></h3>
+          <p>
+            I haven't scraped the surface. Looking for opportunities to learn.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>CI/CD</h3>
+          <p>TravisCI 🠒 Drone 🠒 GitHub Actions</p>
+          <p>
+            Lover of <a href="https://www.conventionalcommits.org/"
+              >Conventional Commits</a
+            > and <a
+              href="https://semantic-release.gitbook.io/semantic-release/"
+              >Semantic Release</a
+            > for automated releases.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Project Management</h3>
+          <p>I've tried almost everything.</p>
+          <p>
+            I'm on <a href="https://linear.app/">Linear</a> now and it feels right.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </CvSection>
+  <CvSection class="prose px-4">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <h3 class="mb-0">Canadian Food Inspection Agency</h3>
+        <small>2013 - Now</small>
+        <p>Yes, I've been here a long time. Call me well-seasoned.</p>
+      </li>
+      <li>
+        <h3 class="mb-0">BSc | Biology</h3>
+        <small>2009 - University of Victoria</small>
+      </li>
+    </ul>
+  </CvSection>
+  <CvSection class="prose px-4">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <h3 class="mb-0">MSc | Biology</h3>
+        <small>2013 - University of Victoria</small>
+        <p>
+          Tried to find something interesting about Douglas fir reproduction
+          using transcriptomics.
+        </p>
+      </li>
+      <li>
+        <h3 class="mb-0">BSc | Biology</h3>
+        <small>2009 - University of Victoria</small>
+      </li>
+    </ul>
+  </CvSection>
+</Layout>

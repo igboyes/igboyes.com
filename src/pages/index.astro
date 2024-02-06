@@ -1,0 +1,39 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Ian Boyes">
+  <main>
+    <Header />
+    <section class="font-medium prose p-4 lg:p-0 lg:text-lg">
+      <ul class="list-none mt-8">
+        <li>Full stack developer</li>
+        <li>Bioinformatician</li>
+        <li>Product Manager</li>
+        <li>Team Lead</li>
+        <li>Designer</li>
+        <li>Server Mechanic</li>
+        <li>Cat Fancier</li>
+        <li>Cook</li>
+        <li class="blink text-black">
+          <span
+            style="width: 30px; height: 5px;"
+            class="border border-slate-600"></span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <style>
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+    }
+
+    .blink {
+      animation: blink 1.2s steps(2) infinite;
+    }
+  </style>
+</Layout>
